@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 
-export default function () {
+export default function AddUser() {
 
   let navigate=useNavigate();
 
@@ -29,7 +29,7 @@ export default function () {
       <div className='row'>
         <div className='col-md-6 offset-md-3 border rounded p-4 mt-2 shadow'>
 
-          <h2 className='text-center m-4'>Register User</h2>
+          <h2 className='text-center m-4'>Edit User</h2>
 
           <form onSubmit={(e) => onSubmit(e)}>
             <div className='mb-3'>
