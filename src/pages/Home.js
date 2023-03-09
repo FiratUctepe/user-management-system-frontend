@@ -35,22 +35,22 @@ export default function Home() {
                             </tr>
                         </thead>
                         <tbody>
-                            {users?.map((user,key) => {
+                            {users?.map((user, key) => {
                                 return (
                                     <tr key={key}>
-                                        <th>{key+1}</th>
+                                        <th>{key + 1}</th>
                                         <th>{user.name}</th>
                                         <th>{user.userName}</th>
                                         <th>{user.email}</th>
                                         <th>
                                             <Link className='btn btn-primary mx-2'
-                                            to={`/viewuser/${user.id}`}
+                                                to={`/viewuser/${user.id}`}
                                             >View</Link>
                                             <Link className='btn btn-outline-primary mx-2'
-                                            to={`/edituser/${user.id}`}
+                                                to={`/edituser/${user.id}`}
                                             >Edit</Link>
                                             <button className='btn btn-danger mx-2'
-                                            onClick={()=>deleteUser(user.id)}
+                                                onClick={() => deleteUser(user.id)}
                                             >Delete</button>
                                         </th>
                                     </tr>
